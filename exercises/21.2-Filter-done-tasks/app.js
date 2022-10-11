@@ -10,3 +10,12 @@ let tasks = [
 ];
 
 //your code here
+
+let doneTasks = tasks.filter(checkTasks);
+
+function checkTasks(tasks){
+	if(tasks.done == true){
+		return tasks;
+	}
+}
+console.log(doneTasks);
